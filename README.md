@@ -1,22 +1,19 @@
 # Projet-DevOps-MLOps
 Projet DevOps et MLOps
 
-Voici une version propre des instructions pour votre fichier `README.md` sur GitHub :
 
-```markdown
 # Docker TP Instructions
 
 ## Nettoyage des conteneurs, réseaux et volumes
 
 Avant de commencer les étapes, assurez-vous de nettoyer tous les conteneurs, réseaux et volumes précédents :
 
-```bash
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 docker network rm tp1-network tp2-network tp3-network tp4-network
 docker rmi tp1-http tp1-script tp2-http tp2-script tp2-data tp3-http tp3-script tp3-data
 docker volume prune -f
-```
+
 
 ---
 
@@ -114,7 +111,3 @@ docker volume prune -f
 
 ---
 
-Ce fichier `README.md` vous permet de suivre les étapes de nettoyage, de construction et de lancement des conteneurs à chaque étape de votre TP, avec les URL associées pour tester les applications.
-```
-
-Ce formatage propre et structuré facilite la lecture et l'exécution des commandes étape par étape pour les personnes qui consulteront votre repository sur GitHub.
