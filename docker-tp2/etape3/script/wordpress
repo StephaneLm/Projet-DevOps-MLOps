@@ -1,0 +1,3 @@
+curl -o wordpress.tar.gz https://wordpress.org/latest.tar.gz
+tar -xvf wordpress.tar.gz -C etape3/script
+rm wordpress.tar.gz

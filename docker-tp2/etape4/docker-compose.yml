@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  http:
+    image: tp3-http
+    build:
+      context: ../etape3/http
+    ports:
+      - "8083:8080"
+    depends_on:
+      - script
+    networks:
+      - tp4-network
+
+  script:
+    image: tp3-script
+    build:
+      context: ../etape3/script
+    depends_on:
+      - data
+    networks:
+      - tp4-network
+
+  data:
+    image: tp3-data
+    build:
+      context: ../etape3/data
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+    networks:
+      - tp4-network
+
+networks:
+  tp4-network:
+    driver: bridge
