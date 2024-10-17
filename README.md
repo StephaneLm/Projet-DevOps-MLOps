@@ -2,18 +2,20 @@
 Projet DevOps et MLOps
 
 
+```markdown
 # Docker TP Instructions
 
 ## Nettoyage des conteneurs, réseaux et volumes
 
 Avant de commencer les étapes, assurez-vous de nettoyer tous les conteneurs, réseaux et volumes précédents :
 
+```bash
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 docker network rm tp1-network tp2-network tp3-network tp4-network
 docker rmi tp1-http tp1-script tp2-http tp2-script tp2-data tp3-http tp3-script tp3-data
 docker volume prune -f
-
+```
 
 ---
 
