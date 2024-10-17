@@ -2,7 +2,7 @@
 Projet DevOps et MLOps
 
 
-```markdown
+
 # Docker TP Instructions
 
 ## Nettoyage des conteneurs, réseaux et volumes
